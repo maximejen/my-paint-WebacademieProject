@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPaint</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="centered">My_Paint</h1>
+    <div class="centered">
+        <h3>Type de dessin séléctionné :&nbsp;</h3>
+        <div id="draw-type-selected">line</div>
+    </div>
+    <div class="centered">
+        <canvas id="my-canvas" width="600" height="600" style="border:2px solid #000000;"></canvas>
+        <div>
+            <label>
+                <input class="draw-type-choice" type="radio" name="draw-type" value="line" checked>
+            </label> Ligne<br>
+            <label>
+                <input class="draw-type-choice" type="radio" name="draw-type" value="rect">
+            </label> Rectangle vide<br>
+            <label>
+                <input class="draw-type-choice" type="radio" name="draw-type" value="rect-filled">
+            </label> Rectangle plein<br>
+            <label>
+                <input class="draw-type-choice" type="radio" name="draw-type" value="circle">
+            </label> Cercle<br>
+            <label>
+                <input type="color" name="color-picker" id="color-picker">
+            </label> Couleur
+        </div>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script src="index.js"></script>
+</html>
